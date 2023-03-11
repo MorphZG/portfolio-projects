@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" , content="Zoran Topic">
+  <meta name="description" , content="Login page for cu-bit">
+  <link rel="stylesheet" , href="style.css">
+  <title>CU-BIT Login</title>
+  <h1>Welcome!</h1>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$" required><br>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" oninput="checkPasswordMatch()" required><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="^[0-9]$"><br>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <span id="password-match-message"></span>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="app.js" defer></script>
+
+</body>
+
+</html>

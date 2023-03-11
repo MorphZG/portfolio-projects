@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Validation Page</title>
+	<!-- set the viewport to scale the page based on the device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link to external CSS file -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- a container div to center the form on the page -->
+	<div class="container">
+		<!-- the login form -->
+		<form id="login-form">
+			<!-- heading for the form -->
+			<h1>Login</h1>
+			<!-- label and input field for email -->
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<!-- label and input field for password with a pattern attribute to enforce password requirements -->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+			<!-- label and input field for confirming password -->
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password" required>
+			<!-- label and input field for phone number -->
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<!-- button to submit the form -->
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+</html>

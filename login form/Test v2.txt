@@ -1,0 +1,18 @@
+1. kreirajte registracijsku formu koja će sadržavati 4 inputa (email, password, confirm password i broj mobitela) i jedan button (Login)
+2. koristite js i jQuery 
+3. forma mora biti responzivna
+4. na mobilnim uređajima svi elementi moraju biti 90% veličine ekrana (mobilni uređaju se računaju do 768px širine)
+5. Forma mora imati sljedeće validatore
+	- email mora biti validna email adresa (obavezno polje)
+	- password mora sadržavati barem jedno veliko, jedno malo slovo i broj (obavezno polje)
+	- password i confirm password moraju biti jednaki
+	- broj mobitela nije obavezan
+	- BONUS - unutar password inputa postavite button s kojim se prikazuje password
+6. kada se Login button klikne treba prikazati obavijest da ste logirani ili da je došlo do greške
+7. označiti kriva polja sa zvijezdicom ili ih uokviriti u crvenu boju
+
+8. ispod registracijske forme napraviti dodatnu formu koja će imati 1 input (City) i jedan button (Get data) 
+9. Putem API-a sa stranice https://www.weatherapi.com/ dohvatiti podatke o trenutnoj temperaturi, latitude i lonngitude za navedeni grad putem AJAX poziva
+10. Dohvaćene podatke prikazati na stranici ispod buttona "Get Data" u 3 polja (Temperatura, lat i long). Polja moraju biti HTML <p> tagu i ne smiju postojati na stranici prije poziva na API
+11. Kada korisnik unese ime grada po drugi put i klikne na "Get Data", pobrisati stare podatke (temp, lat, lng), dohvatiti nove i prikazati ih
+12. dizajn po vašem izboru
