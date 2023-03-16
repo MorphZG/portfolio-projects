@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Login Validation Page</title>
 	<!-- set the viewport to scale the page based on the device width -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- link to external CSS file -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="main.js"></script>
 </head>
+
 <body>
 	<!-- a container div to center the form on the page -->
 	<div class="container">
@@ -28,7 +31,25 @@
 			<input type="tel" id="phone" name="phone" required>
 			<!-- button to submit the form -->
 			<button type="submit">Login</button>
+			<!-- warning message -->
+			<p id="warning-message" style="display: none; color: red;">Passwords do not match!</p>
+			<!-- get weather info -->
+			<div class="weather-request">
+				<label for="city-input">Enter a city:</label>
+				<input type="text" id="city-input" placeholder="npr. Zagreb">
+
+				<button id="submit-btn">Get data</button>
+
+				<div id="result-container">
+					<p>Temperature: <span id="temp"></span></p>
+					<p>Latitude: <span id="lat"></span></p>
+					<p>Longitude: <span id="long"></span></p>
+				</div>
+			</div>
 		</form>
 	</div>
+	<!-- weather request -->
+
 </body>
+
 </html>
